@@ -22,9 +22,7 @@ Route::get('/contact',function(){
     return 'Contact';
 })->name('home.contact');
 
-Route::get('/posts/1',function(){
-    return 'Blog post 1';
+Route::get('/posts/{id}',function($id){
+    return 'Blog post '.$id;
 });
-Route::get('/posts/2',function(){
-    return 'Blog post 2';
-});
+
